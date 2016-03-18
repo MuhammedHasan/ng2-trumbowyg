@@ -1,4 +1,4 @@
-import {Component, ElementRef, Inject, OnInit} from 'angular2/core';
+import {Component, ElementRef, OnInit, Input, Output, EventEmitter} from 'angular2/core';
 declare var jQuery: any;
 
 @Component({
@@ -8,13 +8,17 @@ declare var jQuery: any;
 export class TrumbowygComponent implements OnInit {
 
   elementRef: ElementRef;
-
-  constructor( @Inject(ElementRef) elementRef: ElementRef) {
+  @Input() content: String;
+  @Output() contentChange: EventEmitter<string>;
+  constructor(elementRef: ElementRef) {
     this.elementRef = elementRef;
+    this.contentChange = new EventEmitter();
   }
 
   ngOnInit() {
-    jQuery(this.elementRef.nativeElement).find('.trumbowyg-editor').trumbowyg();
+    let ele = jQuery(this.elementRef.nativeElement).find('.trumbowyg-editor');
+    ele.trumbowyg().on('tbwchange', () =>
+      this.contentChange.emit(ele.trumbowyg('html'))
+      );
   }
-
 }
