@@ -1,0 +1,39 @@
+{
+  "name": "ng2-trumbowyg",
+  "version": "0.0.1",
+  "description": "trumbowyg text editor implementation in angular 2",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run lite",
+    "test": "test",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MuhammedHasan/ng2-trumbowyg.git"
+  },
+  "keywords": [
+    "text-editor",
+    "angular2",
+    "trumbowyg"
+  ],
+  "author": "muhammedhasan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/MuhammedHasan/ng2-trumbowyg/issues"
+  },
+  "homepage": "https://github.com/MuhammedHasan/ng2-trumbowyg#readme",
+  "dependencies": {
+    "angular2": "^2.0.0-beta.9",
+    "trumbowyg": "^2.0.0-beta.7",
+    "systemjs": "^0.19.24",
+    "es6-promise": "^3.1.2",
+    "es6-shim": "^0.33.3",
+    "reflect-metadata": "^0.1.2",
+    "rxjs": "^5.0.0-beta.2",
+    "zone.js": "^0.6.4"
+  },
+  "devDependencies": {
+    "lite-server": "^1.3.1"
+  }
+}
