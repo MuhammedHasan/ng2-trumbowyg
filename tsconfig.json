@@ -9,11 +9,6 @@
     "noImplicitAny": false,
     "declaration": true
   },
-  "files": [
-    "ng2-trumbowyg.ts",
-    "node_modules/zone.js/dist/zone.js.d.ts",
-    "./node_modules/angular2/typings/browser.d.ts"
-  ],
   "exclude": [
     "node_modules"
   ]
