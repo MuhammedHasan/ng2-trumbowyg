@@ -1,5 +1,6 @@
 import {Component} from 'angular2/core';
-import {TrumbowygComponent} from './trumbowyg/trumbowyg.component';
+import {TrumbowygComponent} from 'ng2-trumbowyg/ng2-trumbowyg';
+
 @Component({
   selector: 'app',
   template: `

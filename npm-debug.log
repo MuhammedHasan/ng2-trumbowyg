@@ -1,0 +1,28 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'link' ]
+2 info using npm@3.8.3
+3 info using node@v5.10.0
+4 verbose linkPkg /home/cs/Projects/ng2-trumbowyg-old
+5 silly gentlyRm /usr/lib/node_modules/angular2-quickstart is being purged
+6 verbose gentlyRm don't care about contents; nuking /usr/lib/node_modules/angular2-quickstart
+7 verbose stack Error: EACCES: permission denied, symlink '/home/cs/Projects/ng2-trumbowyg-old' -> '/usr/lib/node_modules/angular2-quickstart'
+7 verbose stack     at Error (native)
+8 verbose cwd /home/cs/Projects/ng2-trumbowyg-old
+9 error Linux 3.19.0-58-generic
+10 error argv "/usr/bin/nodejs" "/usr/bin/npm" "link"
+11 error node v5.10.0
+12 error npm  v3.8.3
+13 error path /home/cs/Projects/ng2-trumbowyg-old
+14 error code EACCES
+15 error errno -13
+16 error syscall symlink
+17 error Error: EACCES: permission denied, symlink '/home/cs/Projects/ng2-trumbowyg-old' -> '/usr/lib/node_modules/angular2-quickstart'
+17 error     at Error (native)
+17 error  { [Error: EACCES: permission denied, symlink '/home/cs/Projects/ng2-trumbowyg-old' -> '/usr/lib/node_modules/angular2-quickstart']
+17 error   errno: -13,
+17 error   code: 'EACCES',
+17 error   syscall: 'symlink',
+17 error   path: '/home/cs/Projects/ng2-trumbowyg-old',
+17 error   dest: '/usr/lib/node_modules/angular2-quickstart' }
+18 error Please try running this command again as root/Administrator.
+19 verbose exit [ -13, true ]
